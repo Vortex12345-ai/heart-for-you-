@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Heart for Mal</title>
+    <style>
+        body {
+            background-color: black; /* Setting the background color to black */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #heart {
+            position: relative;
+            width: 300px; /* Adjust the size of the heart */
+            height: 270px; /* Adjust the size of the heart */
+        }
+
+        #heart:before,
+        #heart:after {
+            position: absolute;
+            content: "";
+            left: 150px; /* Adjust the position */
+            top: 0;
+            width: 150px; /* Adjust the size of the heart */
+            height: 240px; /* Adjust the size of the heart */
+            background-color: lightgreen; /* Make the heart light green */
+            border-radius: 150px 150px 0 0; /* Adjust the radius */
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        #heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="heart"></div>
+
+</body>
+</html>
+
